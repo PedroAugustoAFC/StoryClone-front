@@ -1,0 +1,118 @@
+@import "../../variables.scss";
+
+footer{
+    border-top: 1px solid #EDEAE6;
+    margin-top: 35px;
+    section{
+        display: grid;
+        grid-template-columns: 1fr calc(100% - 3.2rem) 1fr;
+        column-gap: 1.6rem;
+        margin: 0px 60px 0px 60px;
+        .div-grid{
+            display: grid;
+            grid-template-columns: auto 1fr 1fr auto;
+            grid-template-rows: auto 1fr;
+            row-gap: 4rem;
+            grid-template-areas:
+            "group-1 group-2 group-3 localization"
+            "group-1 group-2 group-3 store-links"
+            "primary-divider primary-divider primary-divider primary-divider"
+            "fine-print-links payment-methods payment-methods socials";
+            padding-block: 4rem;
+            min-width: 92vw;
+            hr{
+                color: #EDEAE6;
+                height: 1px;
+                border-style: solid;
+            }
+            .group1{
+                grid-area: group-1;
+            }
+            .group2{
+                grid-area: group-2;
+            }
+            .group3{
+                grid-area: group-3;
+            }
+            .localization{
+                grid-area: localization;
+
+            }
+            .store-links{
+                grid-area: store-links;
+                ul{
+                    list-style: none;
+                }
+            }
+            .primary-divider{
+                grid-area: primary-divider;
+            }
+            .socials{
+                grid-area: socials;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    li{
+                        & + li{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            .fine-print-links{
+                grid-area: fine-print-links;
+                ul{
+                    display: flex;
+                    list-style: none;
+                    li{
+                        & + li{
+                            margin-left: 30px;
+                        }
+                        a{
+                            text-decoration: none;
+                            font-family: $primary-font;
+                            font-size: 15px;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .payment-methods{
+                grid-area: payment-methods;
+                ul{
+                    display: flex;
+                    list-style: none;
+                    justify-content: center;
+                    li{
+                        margin-right: 30px;
+                        
+                    }
+                }
+            }
+            .div-info{
+                display: flex;
+                flex-direction: column;
+                span{
+                    color: #5C5C5C;
+                    font-family: $primary-font;
+                    font-size: 12px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        list-style: none;
+                        margin-top: 15px;
+                        a{
+                            color: black;
+                            cursor: pointer;
+                            text-decoration: none;
+                            font-family: $primary-font;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
