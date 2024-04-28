@@ -5,13 +5,13 @@ section{
     overflow: hidden;
     position: relative;
     padding: 35px 0px 35px 0px;
-    background-color: $secundary-color;
-    
+    background-color: $secundary-color;    
     div{
         width: 100%;
         overflow: hidden;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
         .list-container{
             list-style: none;
             display: flex;
@@ -27,6 +27,9 @@ section{
                     margin-left: 25px;
                     cursor: pointer;
                 }
+            }
+            &:hover {
+                animation-play-state: paused;
             }
             @keyframes scrollLeft {
                 0% {
@@ -57,9 +60,12 @@ section{
                     cursor: pointer;
                 }
             }
+            &:hover {
+                animation-play-state: paused;
+            }
             @keyframes scrollRight {
                 0% {
-                    transform: translateX(-56%);
+                    transform: translateX(-55%);
                 }
                 100% {
                     transform: translateX(0);
