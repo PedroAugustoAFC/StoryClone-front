@@ -1,0 +1,71 @@
+@import "../../../variables.scss";
+
+section{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 35px 0px 35px 0px;
+    background-color: $secundary-color;
+    
+    div{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 25px;
+        .list-container{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: flex-start;
+            overflow: hidden;
+            animation: scrollLeft 100s linear infinite;
+            width: max-content;
+            li{
+                img{
+                    border-radius: 5px;
+                    margin-left: 25px;
+                    cursor: pointer;
+                }
+            }
+            @keyframes scrollLeft {
+                0% {
+                  transform: translateX(0);
+                }
+                100% {
+                  transform: translateX(-55%);
+                }
+            }
+        }
+    }
+    div{
+        overflow: hidden;
+        position: relative;
+        .list-container2{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: flex-end;
+            overflow: hidden;
+            width: max-content;
+            animation: scrollRight 100s linear infinite;
+            li{
+                img{
+                    border-radius: 5px;
+                    margin-left: 25px;
+                    cursor: pointer;
+                }
+            }
+            @keyframes scrollRight {
+                0% {
+                    transform: translateX(-56%);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }   
+        }
+        
+    }   
+}
