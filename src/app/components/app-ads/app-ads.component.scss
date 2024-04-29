@@ -38,25 +38,52 @@ section{
                 text-decoration: none;
                 color: black;
                 border-radius: 2.5rem;
+                &:hover{
+                    background-color: rgb(208, 205, 205);
+                }
             }
         }
         .ads-img{
             height: auto;
             position: relative;
-            img{
-                border-radius: 5px;
-                align-items: flex-end;
-                margin-top: 4.5rem;
+            display: flex;
+            flex-direction: column;
+            margin-left: 150px;
+            div{
                 position: absolute;
-                cursor: pointer;
-
+                margin-top: 4.5rem;
+                img{
+                    border-radius: 5px;
+                    align-items: flex-end;
+                    cursor: pointer;
+                    filter: drop-shadow(rgba(0, 0, 0, 0.4) 0px 4px 48px);
+                }
+                p{
+                    color: #5C5C5C;
+                    width: 100%;
+                    height: 40px;
+                    font-family: $primary-font;
+                    font-size: 15px;
+                    margin-left: 120px;
+                    margin-top: 5px;
+                    opacity: 0;
+                    .icon-headphones{
+                        margin-right: 5px;
+                    }
+                }
+                &:hover{
+                    p{
+                        opacity: 1;
+                    }
+                }    
             }
+            
         }
     }
 
     .ads-2{
         display: flex;
-        margin: 0px 60px 0px 60px;
+        margin: 0px 60px 100px 60px;
         .flex-2{
             display: flex;
             flex-direction: column;
@@ -91,8 +118,259 @@ section{
                 text-decoration: none;
                 color: white;
                 border-radius: 2.5rem;
+                &:hover{
+                    background-color: rgb(49, 48, 48);
+                }
             }
         }
 
+    }
+    .ads-3{
+        background-color: $secundary-color;
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+        align-items: center;
+        justify-content: center;
+        .flex-3{
+            width: 100vw;
+            display: flex;
+            padding: 60px;
+            .div1{
+                background-color: #B9E6FF;
+                border-radius: 10px;
+                width: 35vW;
+                height: auto;
+                margin-right: 25px;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                h1{
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                    text-align: start;
+                    letter-spacing: -0.52px;
+                    line-height: 3.8rem;
+                    margin-bottom: 50px;
+                }
+                h3{
+                    height: 2px;
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    text-align: start;
+                    position: absolute;
+                    opacity: 0;
+                }
+                p{
+                    font-family: $primary-font;
+                    text-align: start;
+                    position: absolute;
+                    opacity: 0;
+                }
+                .icon-position{
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+                    position: absolute;
+                    width: 30%;
+                    height: 31%;
+                    .icon-add_circle{
+                        font-size: 30px;
+                        width: 30px;
+                        height: 30px;
+                        margin-bottom: 8%;
+                        margin-right: 9%;
+                        transition: 0.4s;
+                    }
+                }
+                &:hover{
+                    h1{
+                        opacity: 0;
+                    }
+                    h3{
+                        font-size: 2rem;
+                        opacity: 1;
+                        height: auto;
+                        line-height: 97.5%;
+                        letter-spacing: -0.0142em;
+                        width: 20%;
+                        height: 100%;
+                    }
+                    p{
+                        opacity: 1;
+                        height: auto; 
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        margin-top: 70px;
+                        width: 20%;
+                        height: 100%;
+                    }
+                    .icon-add_circle{
+                        transform: rotate(45deg);
+                        transition: 0.4s;
+                    }
+                }
+            }
+            .div2{
+                background-color: #FFF2F1;
+                border-radius: 10px;
+                width: 35vW;
+                margin-right: 25px;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                position: relative;
+                h1{
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                    text-align: start;
+                    letter-spacing: -0.52px;
+                    line-height: 3.8rem;
+                }
+                h3{
+                    height: 2px;
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    text-align: start;
+                    position: absolute;
+                    opacity: 0;
+                }
+                p{
+                    font-family: $primary-font;
+                    text-align: start;
+                    position: absolute;
+                    opacity: 0;
+                }
+                .icon-position{
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    .icon-add_circle{
+                        font-size: 30px;
+                        width: 30px;
+                        height: 30px;
+                        margin-bottom: 8%;
+                        margin-right: 9%;
+                        transition: 0.4s;
+                    }
+                }
+                &:hover{
+                    h1{
+                        opacity: 0;
+                    }
+                    h3{
+                        font-size: 2rem;
+                        opacity: 1;
+                        height: auto;
+                        line-height: 97.5%;
+                        letter-spacing: -0.0142em;
+                    }
+                    p{
+                        opacity: 1;
+                        height: auto; 
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        margin-top: 70px;
+                    }
+                    .icon-add_circle{
+                        transform: rotate(45deg);
+                        transition: 0.4s;
+                    }
+                }
+            }
+            .div3{
+                background-color: #FFEDA3;
+                border-radius: 10px;
+                width: 35vW;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                position: relative;
+                h1{
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                    text-align: start;
+                    letter-spacing: -0.52px;
+                    line-height: 3.8rem;
+                }
+                h3{
+                    height: 2px;
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    text-align: start;
+                    position: absolute;
+                    opacity: 0;
+                }
+                p{
+                    font-family: $primary-font;
+                    text-align: start;
+                    position: absolute;
+                    opacity: 0;
+                }
+                .icon-position{
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    .icon-add_circle{
+                        font-size: 30px;
+                        width: 30px;
+                        height: 30px;
+                        margin-bottom: 8%;
+                        margin-right: 9%;
+                        transition: 0.4s;
+                    }
+                }
+                &:hover{
+                    h1{
+                        opacity: 0;
+                    }
+                    h3{
+                        font-size: 2rem;
+                        opacity: 1;
+                        height: auto;
+                        line-height: 97.5%;
+                        letter-spacing: -0.0142em;
+
+                    }
+                    p{
+                        opacity: 1;
+                        height: auto; 
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        margin-top: 70px;
+                        height: 40%;
+                    }
+                    .icon-add_circle{
+                        transform: rotate(45deg);
+                        transition: 0.4s;
+                    }
+                }
+            }
+        }
+        .a-1{
+            margin: 20px 0px 20px 0px;
+            background-color: white;
+            width: 200px;
+            padding: 15px 0px 15px 0px;
+            font-family: $primary-font;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border-radius: 2.5rem;
+            &:hover{
+                background-color: rgb(208, 205, 205);
+            }
+        }
     }
 }

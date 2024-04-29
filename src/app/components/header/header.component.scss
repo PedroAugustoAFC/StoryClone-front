@@ -47,6 +47,9 @@
                         width: 120px;
                         height: 40px;
                         background-color: $secundary-text;
+                        &:hover{
+                            background-color: rgb(208, 205, 205);
+                        }
                     }
                 } 
             }
