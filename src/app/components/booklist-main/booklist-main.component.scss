@@ -1,0 +1,80 @@
+@import "../../../variables.scss";
+
+section{
+    margin-top: 100px;
+    .list{
+        .list-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 60px 0px 60px;
+            h1{
+                font-family: $primary-font;
+                font-weight: 600;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .list-complete{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 15px;
+                p{
+                    font-size: 12px;
+                    font-family: $primary-font;
+                    font-weight: 600;
+                    margin-right: 10px;
+                    margin-top: 6px;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .icon-arrow_forward_ios{
+                    font-size: 15px;
+                    height: auto;
+                    width: auto;
+                }
+            }
+        }
+        .list-area{
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            .button-left{
+                width: 60px;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                .icon-arrow_back_ios_new{
+                    font-size: 45px;
+                    height: auto;
+                    width: auto;
+                }
+            } 
+            div{
+                display: flex;
+                position: relative;
+                margin: 0px 60px 0px 60px;  
+            }
+            .button-right{
+                width: 60px;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                right: 0px;
+                .icon-arrow_forward_ios{
+                    font-size: 45px;
+                    height: auto;
+                    width: auto;
+                }
+            }
+            &:hover{
+                .button-left, .button-right{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
