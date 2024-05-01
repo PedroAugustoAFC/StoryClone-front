@@ -6,7 +6,11 @@
     padding: 0.8% 0px 0.8% 0px;
     justify-content: space-between;
     width: 100%;
-    
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 2;
     img{
         margin-left: 60px;
     }

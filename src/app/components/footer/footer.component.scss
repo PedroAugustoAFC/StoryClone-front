@@ -28,15 +28,48 @@ footer{
             }
             .group1{
                 grid-area: group-1;
+                ul{
+                    li{
+                        a{
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
             .group2{
                 grid-area: group-2;
+                ul{
+                    li{
+                        a{
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
             .group3{
                 grid-area: group-3;
+                ul{
+                    li{
+                        a{
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
             .localization{
                 grid-area: localization;
+                ul{
+                    li{
+                        display: flex;
+                        p{
+                            margin-top: 3px;
+                            margin-left: 5px;
+                            font-family: $primary-font;
+                            font-size: 15px;
+                            color: black;
+                        }
+                    }
+                }
 
             }
             .store-links{

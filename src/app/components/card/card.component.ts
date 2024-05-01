@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
@@ -9,6 +9,20 @@ import { MatIconModule } from '@angular/material/icon';
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
-export class CardComponent {
+export class CardComponent implements AfterViewInit {
+  @ViewChild('title') titleElement!: ElementRef<HTMLHeadingElement>;
+
+  ngAfterViewInit(): void {
+    if (this.titleElement) {
+      const titleText = this.titleElement.nativeElement.textContent;
+      if(titleText){
+        if (titleText?.length > 48) {
+          const lastSpaceIndex = titleText.lastIndexOf(' ', 48);
+        const truncatedText = lastSpaceIndex !== -1 ? titleText.substring(0, lastSpaceIndex) + '...' : titleText.substring(0, 48) + '...';
+        this.titleElement.nativeElement.textContent = truncatedText;
+        }
+      }
+    }
+  }
 
 }
