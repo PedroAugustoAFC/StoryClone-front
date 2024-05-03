@@ -1,0 +1,11 @@
+@import "../../../variables.scss";
+.categories{
+    background-color: $primary-color;
+    .content-page{
+        margin: 60px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 25px;
+    }
+}

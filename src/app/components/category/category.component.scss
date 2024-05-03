@@ -1,0 +1,34 @@
+@import "../../../variables.scss";
+
+section{
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+    padding: 15px;
+    width: 92%;
+    background-color: white;
+    div{
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-family: $primary-font;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        hr{
+            color: #EDEAE6;
+            height: 1px;
+            border-style: solid;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            img{
+                border-radius: 10px;
+                & + img{
+                    margin-left: 4%;
+                }
+            }
+        }
+    }
+}
