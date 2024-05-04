@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-ads-content',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './ads-content.component.scss'
 })
 export class AdsContentComponent {
-
+  @Input() pageTitle: string = '';
+  @Input() pageInfo: string = '';
 }

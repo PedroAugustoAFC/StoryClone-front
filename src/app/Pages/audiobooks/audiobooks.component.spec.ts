@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdsPageComponent } from './ads-page.component';
+import { AudiobooksComponent } from './audiobooks.component';
 
-describe('AdsPageComponent', () => {
-  let component: AdsPageComponent;
-  let fixture: ComponentFixture<AdsPageComponent>;
+describe('AudiobooksComponent', () => {
+  let component: AudiobooksComponent;
+  let fixture: ComponentFixture<AudiobooksComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AdsPageComponent]
+      imports: [AudiobooksComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AdsPageComponent);
+    fixture = TestBed.createComponent(AudiobooksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
