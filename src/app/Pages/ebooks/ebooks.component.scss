@@ -1,0 +1,17 @@
+@import "../../../variables.scss";
+
+.ebooks{
+    background-color: $primary-color;
+    .ads{
+        background-image: url('/assets/eBook.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        .content{
+            position: absolute;
+            bottom: 0px;
+            background: linear-gradient(to top,#111 80%,transparent 100%);
+            width: 100%;
+        }
+    }
+}
